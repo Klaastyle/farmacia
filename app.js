@@ -68,18 +68,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.nav-link');
 
     function highlightNavLink() {
+        // Only run scroll highlighting if we are on the homepage (where #inicio exists)
+        if (!document.getElementById('inicio')) return;
+
         let currentSectionId = '';
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - 120;
-            if (window.scrollY >= sectionTop) {
-                currentSectionId = section.getAttribute('id');
+            if (section.offsetTop) {
+                const sectionTop = section.offsetTop - 120;
+                if (window.scrollY >= sectionTop) {
+                    currentSectionId = section.getAttribute('id');
+                }
             }
         });
 
         navItems.forEach(item => {
-            item.classList.remove('active');
-            if (item.getAttribute('href') === `#${currentSectionId}`) {
+            const href = item.getAttribute('href');
+            if (href === `#${currentSectionId}` || href === `index.html#${currentSectionId}`) {
                 item.classList.add('active');
+            } else {
+                item.classList.remove('active');
             }
         });
     }
