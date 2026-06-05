@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Salud | Farmacia Anna Domingo Delclós</title>
+    <meta name="description" content="Consejos de salud, noticias farmacéuticas y recomendaciones de bienestar escritas por nuestros farmacéuticos colegiados en Santa Maria de Palautordera.">
+    <meta name="keywords" content="blog farmacia, consejos salud, farmacia anna, bienestar, medicamentos, santa maria de palautordera">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://farmacia-ana.com/blog/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blog de Salud | Farmacia Anna Domingo Delclós">
+    <meta property="og:description" content="Artículos y consejos de salud de nuestros farmacéuticos expertos.">
+    <meta property="og:url" content="https://farmacia-ana.com/blog/">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .blog-hero { padding: 120px 0 60px; text-align: center; }
+        .blog-hero h1 { font-size: 3rem; margin-bottom: 16px; }
+        .blog-hero p { font-size: 1.1rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+        .blog-listing { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 32px; }
+        .blog-full-card { border-radius: 16px; overflow: hidden; background: var(--glass-bg); border: 1px solid var(--glass-border); transition: transform 0.3s, box-shadow 0.3s; }
+        .blog-full-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(0,0,0,0.2); }
+        .blog-card-thumb { height: 220px; display: flex; align-items: center; justify-content: center; }
+        .blog-card-thumb.thumb-teal { background: linear-gradient(135deg, var(--primary) 0%, #0e7490 100%); }
+        .blog-card-thumb.thumb-purple { background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%); }
+        .blog-card-thumb svg { width: 80px; height: 80px; color: rgba(255,255,255,0.85); }
+        .blog-card-body { padding: 28px; }
+        .blog-card-meta { display: flex; gap: 12px; align-items: center; margin-bottom: 14px; font-size: 0.8rem; color: var(--text-secondary); flex-wrap: wrap; }
+        .blog-card-meta .pill { background: var(--primary-light); color: var(--primary); padding: 3px 10px; border-radius: 20px; font-weight: 600; font-size: 0.75rem; }
+        .blog-card-body h2 { font-size: 1.3rem; margin-bottom: 12px; line-height: 1.4; }
+        .blog-card-body p { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px; }
+        .blog-card-footer { display: flex; align-items: center; justify-content: space-between; }
+        .read-more { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: gap 0.2s; }
+        .read-more:hover { gap: 10px; }
+        .author-mini { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: var(--text-secondary); }
+        .author-avatar { width: 30px; height: 30px; border-radius: 50%; background: var(--primary); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 0.7rem; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo" aria-label="Farmacia Anna Domingo Delclós">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="46" fill="var(--bg-secondary)" stroke="var(--primary)" stroke-width="4"/>
+                    <path d="M50 15 V40 H25 V50 H40 V75 H50 V50 H75 V40 H50 V15 Z" fill="#9333ea"/>
+                    <path d="M50 25 V45 H30 V55 H45 V75 H55 V55 H70 V45 H55 V25 Z" fill="#10b981"/>
+                    <path d="M50 42 C53 42 56 45 56 48 C56 51 53 54 50 54 C47 54 44 51 44 48 C44 45 47 42 50 42 Z" fill="white"/>
+                </svg>
+                <span>Farmacia <span style="color:var(--primary);">Anna</span></span>
+            </a>
+            <nav class="nav-links" id="menu-links" aria-label="Menú principal">
+                <a href="../index.html" class="nav-link">Inicio</a>
+                <a href="../nosotros/index.html" class="nav-link">Nosotros</a>
+                <a href="../servicios/index.html" class="nav-link">Servicios</a>
+                <a href="../index.html#productos" class="nav-link">Productos</a>
+                <a href="index.html" class="nav-link active">Blog</a>
+                <a href="../index.html#faq" class="nav-link">Ayuda</a>
+                <a href="../index.html#contacto" class="nav-link">Contacto</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn" id="theme-toggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="icon-btn" id="cart-btn" aria-label="Carrito">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    <span class="cart-badge" style="display:none;">0</span>
+                </button>
+                <button class="btn btn-primary book-service-btn" style="padding:10px 20px;font-size:0.85rem;" id="header-book-btn">Reservar Cita</button>
+                <button class="icon-btn mobile-toggle" id="mobile-toggle" aria-label="Menú móvil">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="blog-hero" style="padding-top:120px; padding-bottom:60px;">
+        <div class="hero-glow-1"></div>
+        <div class="container">
+            <span class="badge badge-primary" style="margin-bottom:16px;">BLOG DE SALUD</span>
+            <h1 class="hero-title">Consejos de <span class="gradient-text">Bienestar</span></h1>
+            <p style="color:var(--text-secondary);font-size:1.1rem;max-width:600px;margin:16px auto 0;">Artículos y guías prácticas escritas por nuestros farmacéuticos colegiados para ayudarte a cuidar tu salud día a día.</p>
+        </div>
+    </section>
+
+    <!-- Blog Listing -->
+    <section class="section-padding" style="padding-top:20px;">
+        <div class="container">
+            <div class="blog-listing">
+                <!-- Post 1 -->
+                <article class="blog-full-card">
+                    <div class="blog-card-thumb thumb-teal">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span class="pill">Atención Farmacéutica</span>
+                            <span>05 Jun 2026</span>
+                            <span>5 min lectura</span>
+                        </div>
+                        <h2>5 Consejos para Aprovechar al Máximo tu Visita a la Farmacia</h2>
+                        <p>Descubre cómo preparar tus preguntas sobre medicamentos y qué información clave debes comunicar a tu farmacéutico para un tratamiento totalmente seguro y eficaz.</p>
+                        <div class="blog-card-footer">
+                            <a href="5-consejos-farmacia/index.html" class="read-more">
+                                Leer artículo
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                            </a>
+                            <div class="author-mini">
+                                <div class="author-avatar">AD</div>
+                                <span>Anna Domingo</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="blog-full-card">
+                    <div class="blog-card-thumb thumb-purple">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                            <span class="pill" style="background:var(--accent-light);color:var(--accent);">Consejo Médico</span>
+                            <span>02 Jun 2026</span>
+                            <span>7 min lectura</span>
+                        </div>
+                        <h2>¿Cuándo Deberías Consultar a un Farmacéutico en Lugar de Ir al Médico?</h2>
+                        <p>Identifica los síntomas leves y situaciones cotidianas en las que el farmacéutico puede darte soluciones inmediatas o derivarte al especialista oportuno sin largas esperas.</p>
+                        <div class="blog-card-footer">
+                            <a href="cuando-consultar-farmaceutico/index.html" class="read-more">
+                                Leer artículo
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                            </a>
+                            <div class="author-mini">
+                                <div class="author-avatar" style="background:var(--accent);">LV</div>
+                                <span>Laura Valls</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col footer-logo-col">
+                <a href="../index.html" class="logo" style="color:white;">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="46" fill="#1e293b" stroke="var(--primary)" stroke-width="4"/><path d="M50 15 V40 H25 V50 H40 V75 H50 V50 H75 V40 H50 V15 Z" fill="#9333ea"/><path d="M50 25 V45 H30 V55 H45 V75 H55 V55 H70 V45 H55 V25 Z" fill="#10b981"/><path d="M50 42 C53 42 56 45 56 48 C56 51 53 54 50 54 C47 54 44 51 44 48 C44 45 47 42 50 42 Z" fill="white"/></svg>
+                    <span>Farmacia <span style="color:var(--primary);">Anna</span></span>
+                </a>
+                <p>Tu farmacia de confianza en Santa Maria de Palautordera. Asesoramiento experto y envíos rápidos a domicilio.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Artículos Recientes</h4>
+                <ul>
+                    <li><a href="5-consejos-farmacia/index.html">5 Consejos para tu Visita a la Farmacia</a></li>
+                    <li><a href="cuando-consultar-farmaceutico/index.html">Farmacéutico vs Médico: ¿Cuándo ir?</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../nosotros/index.html">Nosotros</a></li>
+                    <li><a href="../servicios/index.html">Servicios</a></li>
+                    <li><a href="../index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p style="font-size:0.9rem;line-height:1.6;margin-bottom:12px;">Carrer de la Creu, 4, 08460<br>Santa Maria de Palautordera</p>
+                <p style="font-size:0.9rem;font-weight:bold;color:white;">Tel: +34 938 48 38 74</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Farmacia Anna Domingo Delclós. Todos los derechos reservados.</p>
+            <div class="footer-bottom-links"><a href="#">Aviso Legal</a><a href="#">Política de Privacidad</a></div>
+        </div>
+    </footer>
+
+    <!-- Cart & Modal (para consistencia) -->
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Carrito"><div class="cart-header"><h2>Tu Carrito</h2><button class="icon-btn" id="close-cart" aria-label="Cerrar carrito"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button></div><div class="cart-items"></div><div class="cart-footer"><div class="cart-summary-row"><span>Total:</span><span class="cart-summary-total"><span id="cart-total-val">0.00</span> €</span></div><button class="btn btn-accent" style="width:100%;" id="checkout-btn">Proceder al Pago</button></div></div>
+    <div class="modal-overlay" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-content glass-panel"><div class="modal-header"><h2 id="modal-title">Solicitar Cita de Salud</h2><button class="modal-close" id="close-modal" aria-label="Cerrar modal"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button></div><div class="modal-body"><form id="appointment-form"><div class="form-group"><label for="modal-name">Nombre Completo *</label><input type="text" id="modal-name" class="form-input" placeholder="Escribe tu nombre completo" required></div><div class="form-group"><label for="modal-phone">Teléfono *</label><input type="tel" id="modal-phone" class="form-input" placeholder="600 000 000" required></div><div class="form-group"><label for="modal-service">Servicio *</label><select id="modal-service" class="form-input" required><option value="" disabled selected>Seleccione un servicio</option><option value="Consulta Personalizada">Consulta Personalizada (23.00 €)</option><option value="Chequeos y Pruebas de Salud">Chequeos y Pruebas (34.00 €)</option></select></div><div class="form-group-row"><div class="form-group"><label for="modal-date">Fecha *</label><input type="date" id="modal-date" class="form-input" required></div><div class="form-group"><label for="modal-time">Hora *</label><select id="modal-time" class="form-input" required><option value="" disabled selected>Hora</option><option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option><option>16:00</option><option>17:00</option><option>18:00</option></select></div></div><button type="submit" class="btn btn-primary" style="width:100%;margin-top:10px;" id="btn-submit-booking">Agendar Ahora</button></form></div></div></div>
+    <div class="toast-container" id="toast-container"></div>
+    <script src="../app.js"></script>
+</body>
+</html>
+
