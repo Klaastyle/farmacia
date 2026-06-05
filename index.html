@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia Anna Domingo Delclós | Cuidado de tu Salud y Bienestar</title>
+    
+    <!-- Meta tags SEO -->
+    <meta name="description" content="Bienvenido a la Farmacia Anna Domingo Delclós en Santa Maria de Palautordera, Barcelona. Pruebas de salud, revisión de recetas, consulta personalizada y medicamentos online con entrega a domicilio.">
+    <meta name="keywords" content="farmacia, anna domingo delclos, farmacia barcelona, santa maria de palautordera, medicamentos online, pruebas de salud, recetas, bienestar">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://farmacia-ana.com/">
+    
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Farmacia Anna Domingo Delclós | Cuidado de tu Salud y Bienestar">
+    <meta property="og:description" content="Ofrecemos atención farmacéutica personalizada, pruebas médicas, análisis de salud y un catálogo de medicamentos en línea. Entregas rápidas a domicilio.">
+    <meta property="og:url" content="https://farmacia-ana.com/">
+    <meta property="og:image" content="https://farmacia-ana.com/assets/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Farmacia Anna Domingo Delclós | Cuidado de tu Salud y Bienestar">
+    <meta name="twitter:description" content="Atención farmacéutica personalizada y catálogo digital de farmacia en Barcelona.">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header id="main-header">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo" id="nav-logo" aria-label="Farmacia Anna Domingo Delclós Inicio">
+                <!-- SVG Logo representing the segment cross -->
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="46" fill="var(--bg-secondary)" stroke="var(--primary)" stroke-width="4"/>
+                    <!-- Segmented Green/Purple Cross -->
+                    <path d="M50 15 V40 H25 V50 H40 V75 H50 V50 H75 V40 H50 V15 Z" fill="#9333ea"/>
+                    <path d="M50 25 V45 H30 V55 H45 V75 H55 V55 H70 V45 H55 V25 Z" fill="#10b981"/>
+                    <!-- Center negative space leaf -->
+                    <path d="M50 42 C53 42 56 45 56 48 C56 51 53 54 50 54 C47 54 44 51 44 48 C44 45 47 42 50 42 Z" fill="white"/>
+                </svg>
+                <span>Farmacia <span style="color:var(--primary);">Anna</span></span>
+            </a>
+
+            <!-- Desktop Links -->
+            <nav class="nav-links" id="menu-links" aria-label="Menú principal">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#productos" class="nav-link">Productos</a>
+                <a href="#blog" class="nav-link">Consejos</a>
+                <a href="#faq" class="nav-link">Ayuda</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+
+            <!-- Navbar Actions -->
+            <div class="nav-actions">
+                <!-- Theme toggle button -->
+                <button class="icon-btn" id="theme-toggle" aria-label="Cambiar tema de color">
+                    <!-- Sun icon -->
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <!-- Moon icon -->
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <!-- Cart button -->
+                <button class="icon-btn" id="cart-btn" aria-label="Ver carrito de compras">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-badge" style="display: none;">0</span>
+                </button>
+
+                <!-- Book action -->
+                <button class="btn btn-primary book-service-btn" style="padding: 10px 20px; font-size: 0.85rem;" id="header-book-btn">Reservar Cita</button>
+
+                <!-- Mobile Menu Button -->
+                <button class="icon-btn mobile-toggle" id="mobile-toggle" aria-label="Abrir menú de navegación">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+        <div class="container hero-wrapper">
+            <div class="hero-content">
+                <span class="badge badge-primary hero-subtitle">Tu Bienestar es Nuestro Compromiso</span>
+                <h1 class="hero-title">Encuentra la Solución para tu <span class="gradient-text">Bienestar</span> Aquí</h1>
+                <p class="hero-desc">En la Farmacia Anna Domingo Delclós nos dedicamos a cuidar de ti. Consulta con profesionales, realiza chequeos preventivos y pide tus medicamentos en línea con entrega rápida en tu hogar.</p>
+                <div class="hero-btns">
+                    <a href="#productos" class="btn btn-primary" id="btn-hero-catalog">Explorar Catálogo</a>
+                    <button class="btn btn-secondary btn-hero-book" data-service="Consulta Personalizada" id="btn-hero-booking">Reservar Asesoría</button>
+                </div>
+                <div class="hero-features">
+                    <div class="hero-feat-item">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                        <span>Envío a Domicilio</span>
+                    </div>
+                    <div class="hero-feat-item">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                        <span>Atención Profesional</span>
+                    </div>
+                    <div class="hero-feat-item">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                        <span>Pago 100% Seguro</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image-wrapper">
+                <div class="pharmacy-illustration">
+                    <div class="blob-bg"></div>
+                    <!-- Floating Card 1 -->
+                    <div class="illustration-card card-1">
+                        <span class="illustration-badge">PRUEBA RÁPIDA</span>
+                        <div class="card-icon icon-teal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3>Chequeo de Salud</h3>
+                        <p>Resultados en 15 minutos para glucosa, colesterol y presión arterial.</p>
+                    </div>
+                    <!-- Floating Card 2 -->
+                    <div class="illustration-card card-2">
+                        <div class="card-icon icon-orange">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3>Consulta Online</h3>
+                        <p>Habla con nuestros farmacéuticos colegiados desde casa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <h3>16K+</h3>
+                <p>Clientes Satisfechos</p>
+            </div>
+            <div class="stat-item">
+                <h3>348+</h3>
+                <p>Farmacéuticos Expertos</p>
+            </div>
+            <div class="stat-item">
+                <h3>15 Min</h3>
+                <p>Tiempo Medio de Espera</p>
+            </div>
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>Compromiso Profesional</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works (Checkout Flow) -->
+    <section class="section-padding" id="como-funciona" style="background-color: var(--bg-tertiary); transition: background-color var(--transition);">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-accent">PROCESO SENCILLO</span>
+                <h2>Tu medicación a domicilio en 4 pasos</h2>
+                <p>Comprar online tus productos sanitarios y medicamentos sin receta nunca había sido tan seguro y rápido.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card glass-panel">
+                    <div class="step-num">1</div>
+                    <h3>Selecciona Producto</h3>
+                    <p>Busca en nuestro catálogo los suministros o fármacos autorizados que necesites y añádelos al carrito.</p>
+                </div>
+                <div class="step-card glass-panel">
+                    <div class="step-num">2</div>
+                    <h3>Indica tu Dirección</h3>
+                    <p>Introduce los detalles de envío en Santa Maria de Palautordera o cualquier otra localidad de Barcelona.</p>
+                </div>
+                <div class="step-card glass-panel">
+                    <div class="step-num">3</div>
+                    <h3>Pago Seguro</h3>
+                    <p>Realiza la transacción de forma encriptada y protegida con tu tarjeta o método de pago de confianza.</p>
+                </div>
+                <div class="step-card glass-panel">
+                    <div class="step-num">4</div>
+                    <h3>Entrega Rápida</h3>
+                    <p>Un transportista certificado de salud entregará tu paquete en tu puerta manteniendo la cadena de temperatura.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-primary">ATENCIÓN SANITARIA</span>
+                <h2>Servicios Especializados en Farmacia</h2>
+                <p>Cuidamos de ti y de tu familia con servicios médicos y de enfermería preventiva de alta calidad.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                        </svg>
+                    </div>
+                    <h3>Chequeos y Pruebas</h3>
+                    <p>Control rápido de glucosa, colesterol, triglicéridos y toma de presión arterial por expertos sanitarios.</p>
+                    <div class="service-footer">
+                        <span class="service-price">34.00 €</span>
+                        <span class="service-link book-service-btn" data-service="Chequeos y Pruebas de Salud" aria-label="Reservar Chequeos y Pruebas">
+                            Reservar 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                        </svg>
+                    </div>
+                    <h3>Consulta Personalizada</h3>
+                    <p>Orientación privada con un farmacéutico colegiado para resolver dudas sobre tratamientos y hábitos de vida.</p>
+                    <div class="service-footer">
+                        <span class="service-price">23.00 €</span>
+                        <span class="service-link book-service-btn" data-service="Consulta Personalizada" aria-label="Reservar Consulta Personalizada">
+                            Reservar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <h3>Medicina Interna</h3>
+                    <p>Seguimiento farmacoterapéutico de patologías crónicas como hipertensión, diabetes o dislipidemia.</p>
+                    <div class="service-footer">
+                        <span class="service-price">42.00 €</span>
+                        <span class="service-link book-service-btn" data-service="Medicina Interna" aria-label="Reservar Medicina Interna">
+                            Reservar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <h3>Revisión de Recetas</h3>
+                    <p>Analizamos tus recetas de la Seguridad Social o privadas para verificar interacciones y asegurar la posología.</p>
+                    <div class="service-footer">
+                        <span class="service-price">34.00 €</span>
+                        <span class="service-link book-service-btn" data-service="Revisión de Recetas" aria-label="Reservar Revisión de Recetas">
+                            Reservar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h3>Asesoramiento en Salud</h3>
+                    <p>Consultoría integral en nutrición, cuidado infantil, menopausia y suplementación natural deportiva.</p>
+                    <div class="service-footer">
+                        <span class="service-price">34.00 €</span>
+                        <span class="service-link book-service-btn" data-service="Asesoramiento en Salud" aria-label="Reservar Asesoramiento en Salud">
+                            Reservar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4a4 4 0 100 8 4 4 0 000-8zM2 20a10 10 0 0120 0H2z" />
+                        </svg>
+                    </div>
+                    <h3>Dermatológico</h3>
+                    <p>Análisis del estado de tu piel y cuero cabelludo, recomendándote rutinas cosméticas adaptadas.</p>
+                    <div class="service-footer">
+                        <span class="service-price">34.00 €</span>
+                        <span class="service-link book-service-btn" data-service="Chequeo Dermatológico" aria-label="Reservar Chequeo Dermatológico">
+                            Reservar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3>Chequeo General</h3>
+                    <p>Un estudio holístico de tus constantes vitales y estilo de vida con recomendaciones inmediatas.</p>
+                    <div class="service-footer">
+                        <span class="service-price">34.00 €</span>
+                        <span class="service-link book-service-btn" data-service="Chequeo Médico General" aria-label="Reservar Chequeo Médico General">
+                            Reservar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3>Control de Salud</h3>
+                    <p>Planificación de objetivos de salud a largo plazo, ideales para el control de peso y cese del tabaquismo.</p>
+                    <div class="service-footer">
+                        <span class="service-price">34.00 €</span>
+                        <span class="service-link book-service-btn" data-service="Control de Salud Personalizado" aria-label="Reservar Control de Salud">
+                            Reservar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <section id="productos" class="section-padding" style="background-color: var(--bg-tertiary); transition: background-color var(--transition);">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-accent">TIENDA DIGITAL</span>
+                <h2>Nuestro Catálogo de Productos</h2>
+                <p>Compra con total garantía y seguridad. Suministros médicos y suplementos listos para enviar a tu dirección.</p>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="catalog-filter-bar">
+                <button class="filter-btn active" data-filter="all">Todos los productos</button>
+                <button class="filter-btn" data-filter="medicamento">Medicamentos Autorizados</button>
+                <button class="filter-btn" data-filter="cuidado">Cuidado Personal</button>
+                <button class="filter-btn" data-filter="bienestar">Suplementación y Bienestar</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <article class="product-card" data-category="bienestar">
+                    <span class="badge badge-primary product-tag">Recomendado</span>
+                    <div class="product-img-box">
+                        <!-- Custom Product SVG -->
+                        <svg class="product-svg-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="30" y="25" width="40" height="60" rx="10" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="3"/>
+                            <rect x="35" y="15" width="30" height="10" rx="3" fill="var(--primary)" />
+                            <circle cx="50" cy="55" r="15" fill="var(--accent-light)"/>
+                            <path d="M50 48 V62 M43 55 H57" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Bienestar</span>
+                        <h3 class="product-title">Vitpro Dailyfit</h3>
+                        <p class="product-desc">Suplemento vitamínico diario formulado para aumentar la vitalidad física, mental y reforzar tus defensas naturales.</p>
+                        <div class="product-action">
+                            <span class="product-price">18.50 €</span>
+                            <button class="btn btn-primary btn-add-cart" data-id="p1" data-name="Vitpro Dailyfit" data-price="18.50">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card" data-category="medicamento">
+                    <span class="badge badge-accent product-tag">Con Receta/Soporte</span>
+                    <div class="product-img-box">
+                        <svg class="product-svg-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="25" y="35" width="50" height="40" rx="6" fill="var(--accent-light)" stroke="var(--accent)" stroke-width="3"/>
+                            <rect x="42" y="25" width="16" height="10" rx="2" fill="var(--accent)" />
+                            <line x1="35" y1="55" x2="65" y2="55" stroke="var(--secondary)" stroke-width="3" stroke-dasharray="4 4"/>
+                        </svg>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Medicamentos</span>
+                        <h3 class="product-title">Probenecid Pills</h3>
+                        <p class="product-desc">Tratamiento médico complementario indicado para favorecer la eliminación de ácido úrico a nivel renal.</p>
+                        <div class="product-action">
+                            <span class="product-price">24.00 €</span>
+                            <button class="btn btn-primary btn-add-cart" data-id="p2" data-name="Probenecid Pills" data-price="24.00">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card" data-category="cuidado">
+                    <span class="badge badge-primary product-tag">Top Ventas</span>
+                    <div class="product-img-box">
+                        <svg class="product-svg-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M40 30 H60 V85 H40 Z" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="3"/>
+                            <path d="M45 20 H55 V30 H45 Z" fill="var(--secondary)" />
+                            <path d="M50 10 V20" stroke="var(--secondary)" stroke-width="3"/>
+                            <circle cx="50" cy="58" r="8" fill="var(--success)"/>
+                        </svg>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Cuidado Personal</span>
+                        <h3 class="product-title">Alco Hand Sanitizer</h3>
+                        <p class="product-desc">Gel hidroalcohólico desinfectante de manos enriquecido con aloe vera para mantener la piel suave y protegida.</p>
+                        <div class="product-action">
+                            <span class="product-price">5.90 €</span>
+                            <button class="btn btn-primary btn-add-cart" data-id="p3" data-name="Alco Hand Sanitizer" data-price="5.90">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="product-card" data-category="medicamento">
+                    <div class="product-img-box">
+                        <svg class="product-svg-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="25" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="3"/>
+                            <path d="M50 35 V45 M50 55 V65 M35 50 H45 M55 50 H65" stroke="var(--primary)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="5" fill="var(--accent)"/>
+                        </svg>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-cat">Medicamentos</span>
+                        <h3 class="product-title">Antihistamin Tears</h3>
+                        <p class="product-desc">Gotas oftálmicas para aliviar rápidamente la irritación, picazón y enrojecimiento ocular provocado por alergias.</p>
+                        <div class="product-action">
+                            <span class="product-price">12.20 €</span>
+                            <button class="btn btn-primary btn-add-cart" data-id="p4" data-name="Antihistamin Tears" data-price="12.20">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-primary">CONSEJOS DE SALUD</span>
+                <h2>Blog y Recomendaciones Médicas</h2>
+                <p>Nuestros expertos farmacéuticos escriben periódicamente consejos útiles para mejorar tu bienestar diario.</p>
+            </div>
+            <div class="blog-grid">
+                <!-- Blog 1 -->
+                <article class="blog-card">
+                    <div class="blog-img-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-meta">
+                            <span>05 Jun 2026</span>
+                            <span>•</span>
+                            <span style="color: var(--primary);">Atención Farmacéutica</span>
+                            <span>•</span>
+                            <span>5 min lectura</span>
+                        </div>
+                        <h3 class="blog-title">5 Consejos para Aprovechar al Máximo tu Visita a la Farmacia</h3>
+                        <p class="blog-desc">Descubre cómo preparar tus preguntas sobre medicamentos y qué información clave debes comunicar a tu farmacéutico para un tratamiento totalmente seguro.</p>
+                        <a href="#blog" class="blog-link">
+                            Leer artículo
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog 2 -->
+                <article class="blog-card">
+                    <div class="blog-img-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-meta">
+                            <span>02 Jun 2026</span>
+                            <span>•</span>
+                            <span style="color: var(--primary);">Consejo Médico</span>
+                            <span>•</span>
+                            <span>7 min lectura</span>
+                        </div>
+                        <h3 class="blog-title">¿Cuándo Deberías Consultar a un Farmacéutico en Lugar de Ir al Médico?</h3>
+                        <p class="blog-desc">Identifica los síntomas leves y situaciones cotidianas en las que el farmacéutico puede recetarte soluciones inmediatas o derivarte al especialista oportuno.</p>
+                        <a href="#blog" class="blog-link">
+                            Leer artículo
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section id="faq" class="section-padding" style="background-color: var(--bg-tertiary); transition: background-color var(--transition);">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-accent">PREGUNTAS FRECUENTES</span>
+                <h2>Resolvemos tus Dudas</h2>
+                <p>Si tienes cualquier duda técnica o médica, revisa nuestra sección de ayuda o contacta directamente.</p>
+            </div>
+            
+            <div class="faq-max-width">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-header" id="faq-h1">
+                        <h3>¿Cómo funciona el envío a domicilio de medicamentos?</h3>
+                        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="faq-content" id="faq-c1">
+                        <p>Los envíos se gestionan de forma certificada a través de mensajería autorizada para el transporte farmacéutico. Una vez realizada la compra de productos autorizados sin receta en nuestra web, se preparan bajo estrictas condiciones higiénicas y se entregan en un plazo de 24 a 48 horas laborables en Barcelona y alrededores.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-header" id="faq-h2">
+                        <h3>¿Puedo reservar citas para pruebas de salud en línea?</h3>
+                        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="faq-content" id="faq-c2">
+                        <p>Sí, a través de nuestro botón "Reservar Cita", puedes seleccionar el servicio de salud preventivo que necesitas (como chequeos rápidos de glucosa o consulta personalizada), elegir el día y la hora que mejor te convenga, y agendar tu visita de forma rápida y digital.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-header" id="faq-h3">
+                        <h3>¿Qué documentos necesito para retirar medicamentos recetados?</h3>
+                        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="faq-content" id="faq-c3">
+                        <p>Para retirar medicamentos sujetos a receta médica en nuestro establecimiento físico, debes presentar obligatoriamente tu Tarjeta Sanitaria (TSI) vigente o la receta médica oficial en papel firmada por un médico colegiado.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-header" id="faq-h4">
+                        <h3>¿Ofrecen asesoramiento sobre interacciones de medicamentos?</h3>
+                        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="faq-content" id="faq-c4">
+                        <p>Absolutamente. La revisión de recetas y el seguimiento farmacoterapéutico son pilares fundamentales de nuestra farmacia. Si tomas varios medicamentos, nuestros farmacéuticos evaluarán posibles interacciones nocivas y te explicarán detalladamente cómo y cuándo tomarlos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section id="contacto" class="section-padding">
+        <div class="container contact-wrapper">
+            <!-- Left Info Panel -->
+            <div class="contact-info-panel">
+                <span class="badge badge-primary">¿DÓNDE ESTAMOS?</span>
+                <h3 style="margin-top: 12px;">Ponte en contacto con nuestro equipo</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 32px;">Estamos a tu entera disposición para resolver cualquier consulta médica, asesorarte sobre productos o ayudarte con tu pedido online.</p>
+                
+                <div class="contact-info-list">
+                    <!-- Address -->
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <div class="contact-item-details">
+                            <h4>Dirección</h4>
+                            <p>Carrer de la Creu, 4, 08460<br>Santa Maria de Palautordera, Barcelona, España</p>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                        </div>
+                        <div class="contact-item-details">
+                            <h4>Teléfono</h4>
+                            <p><a href="tel:+34938483874" id="contact-phone">+34 938 48 38 74</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div class="contact-item-details">
+                            <h4>Correo Electrónico</h4>
+                            <p><a href="mailto:info@farmacia-ana.com" id="contact-email-link">info@farmacia-ana.com</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps Interactive Widget -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.7915729783935!2d2.443906376571556!3d41.682897171221774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c8c7ad4e4ab5%3A0x6b64d4ecb9549f2b!2sCarrer%20de%20la%20Creu%2C%204%2C%2008460%20Santa%20Maria%20de%20Palautordera%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1717600000000!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Farmacia Anna Domingo Delclós"></iframe>
+                </div>
+            </div>
+
+            <!-- Right Contact Form -->
+            <div class="contact-form glass-panel">
+                <h3 style="margin-bottom: 24px;">Envíanos un mensaje</h3>
+                <form id="contact-form" action="#" method="POST">
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="contact-name">Nombre Completo *</label>
+                            <input type="text" id="contact-name" class="form-input" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email *</label>
+                            <input type="email" id="contact-email" class="form-input" placeholder="tuemail@correo.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Asunto</label>
+                        <input type="text" id="contact-subject" class="form-input" placeholder="¿En qué podemos ayudarte?">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Mensaje *</label>
+                        <textarea id="contact-message" class="form-input" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    <div class="form-group" style="display: flex; align-items: flex-start; gap: 8px;">
+                        <input type="checkbox" id="contact-terms" required style="margin-top: 4px; cursor: pointer;">
+                        <label for="contact-terms" style="font-size: 0.8rem; font-weight: normal; cursor: pointer; color: var(--text-secondary);">Acepto la <a href="#" style="color: var(--primary); text-decoration: underline;">política de privacidad</a> y el tratamiento de mis datos de salud.</label>
+                    </div>
+                    <button type="submit" class="btn btn-accent" style="width: 100%;" id="btn-submit-contact">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <!-- Logo & About Column -->
+            <div class="footer-col footer-logo-col">
+                <a href="#inicio" class="logo" style="color: white;">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="46" fill="#1e293b" stroke="var(--primary)" stroke-width="4"/>
+                        <path d="M50 15 V40 H25 V50 H40 V75 H50 V50 H75 V40 H50 V15 Z" fill="#9333ea"/>
+                        <path d="M50 25 V45 H30 V55 H45 V75 H55 V55 H70 V45 H55 V25 Z" fill="#10b981"/>
+                        <path d="M50 42 C53 42 56 45 56 48 C56 51 53 54 50 54 C47 54 44 51 44 48 C44 45 47 42 50 42 Z" fill="white"/>
+                    </svg>
+                    <span>Farmacia <span style="color:var(--primary);">Anna</span></span>
+                </a>
+                <p>Tu farmacia de confianza en Santa Maria de Palautordera. Ofrecemos asesoramiento experto, chequeos de salud y envíos rápidos de medicamentos a domicilio.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook de Farmacia Anna">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram de Farmacia Anna">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="WhatsApp de Farmacia Anna">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Links Column 1 -->
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios de Salud</a></li>
+                    <li><a href="#productos">Catálogo de Tienda</a></li>
+                    <li><a href="#blog">Blog de Salud</a></li>
+                    <li><a href="#faq">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+
+            <!-- Links Column 2 -->
+            <div class="footer-col">
+                <h4>Servicios Populares</h4>
+                <ul>
+                    <li><a href="#servicios">Prueba de Glucosa</a></li>
+                    <li><a href="#servicios">Chequeo Dermatológico</a></li>
+                    <li><a href="#servicios">Consulta Médica Rápida</a></li>
+                    <li><a href="#servicios">Control de Peso</a></li>
+                    <li><a href="#servicios">Revisión de Recetas</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Column -->
+            <div class="footer-col">
+                <h4>Boletín Informativo</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 16px; line-height: 1.4;">Suscríbete para recibir consejos de salud y ofertas exclusivas de nuestra farmacia.</p>
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required aria-label="Correo para boletín">
+                    <button type="submit" class="newsletter-btn" aria-label="Suscribirse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Farmacia Anna Domingo Delclós. Todos los derechos reservados. Farmacia Colegiada Nº 08460.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Aviso Legal</a>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Política de Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals & Cart Drawer -->
+    <!-- Darken Overlay -->
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <!-- Side Cart Drawer -->
+    <div class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Carrito de Compras">
+        <div class="cart-header">
+            <h2>Tu Carrito</h2>
+            <button class="icon-btn" id="close-cart" aria-label="Cerrar carrito">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+        
+        <!-- Cart Items Container -->
+        <div class="cart-items">
+            <!-- Populated via Javascript -->
+        </div>
+
+        <!-- Cart Footer Summary -->
+        <div class="cart-footer">
+            <div class="cart-summary-row">
+                <span>Total:</span>
+                <span class="cart-summary-total"><span id="cart-total-val">0.00</span> €</span>
+            </div>
+            <button class="btn btn-accent" style="width: 100%;" id="checkout-btn">Proceder al Pago</button>
+        </div>
+    </div>
+
+    <!-- Appointment Booking Modal -->
+    <div class="modal-overlay" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-content glass-panel">
+            <div class="modal-header">
+                <h2 id="modal-title">Solicitar Cita de Salud</h2>
+                <button class="modal-close" id="close-modal" aria-label="Cerrar modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="appointment-form">
+                    <div class="form-group">
+                        <label for="modal-name">Nombre Completo *</label>
+                        <input type="text" id="modal-name" class="form-input" placeholder="Escribe tu nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-phone">Teléfono de Contacto *</label>
+                        <input type="tel" id="modal-phone" class="form-input" placeholder="Ej: 600 000 000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-service">Servicio Requerido *</label>
+                        <select id="modal-service" class="form-input" required>
+                            <option value="" disabled selected>Seleccione un servicio</option>
+                            <option value="Chequeos y Pruebas de Salud">Chequeos y Pruebas de Salud (34.00 €)</option>
+                            <option value="Consulta Personalizada">Consulta Personalizada (23.00 €)</option>
+                            <option value="Medicina Interna">Medicina Interna (42.00 €)</option>
+                            <option value="Revisión de Recetas">Revisión de Recetas (34.00 €)</option>
+                            <option value="Asesoramiento en Salud">Asesoramiento en Salud (34.00 €)</option>
+                            <option value="Chequeo Dermatológico">Chequeo Dermatológico (34.00 €)</option>
+                            <option value="Chequeo Médico General">Chequeo Médico General (34.00 €)</option>
+                            <option value="Control de Salud Personalizado">Control de Salud Personalizado (34.00 €)</option>
+                        </select>
+                    </div>
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="modal-date">Fecha *</label>
+                            <input type="date" id="modal-date" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="modal-time">Hora *</label>
+                            <select id="modal-time" class="form-input" required>
+                                <option value="" disabled selected>Seleccionar hora</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                                <option value="19:00">19:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;" id="btn-submit-booking">Agendar Ahora</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Script Entry -->
+    <script src="app.js"></script>
+</body>
+</html>
