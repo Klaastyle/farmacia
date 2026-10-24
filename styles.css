@@ -1674,3 +1674,83 @@ footer h3, footer h4 {
         padding: 24px;
     }
 }
+
+/* ==========================================================================
+   Bloque Oficial Kit Digital (Mejora Kit Digital) - Adaptado a colores Farmacia
+   ========================================================================== */
+.elementor-element-b19983d {
+    background-color: var(--primary, #0d9488);
+    padding: 28px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.elementor-element-b19983d .e-con-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.elementor-element-0008c70 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.elementor-element-0008c70 a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.elementor-element-0008c70 a:hover {
+    transform: scale(1.04);
+    opacity: 0.95;
+}
+
+.elementor-element-0008c70 img {
+    width: 210px;
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.elementor-element-3d4bec7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.elementor-element-3d4bec7 img {
+    width: 440px;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .elementor-element-b19983d {
+        padding: 20px 15px;
+    }
+    .elementor-element-0008c70 img {
+        width: 165px;
+    }
+    .elementor-element-3d4bec7 img {
+        width: 320px;
+    }
+}
